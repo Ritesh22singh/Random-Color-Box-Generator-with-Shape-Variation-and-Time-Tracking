@@ -1,0 +1,75 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #007bff, #6c63ff);
+    color: #fff;
+}
+
+/* Container Styling */
+div {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 90%;
+}
+
+/* Button Styling */
+#startButton {
+    font-size: 1.5em;
+    padding: 15px 30px;
+    color: white;
+    background: linear-gradient(135deg, #4caf50, #2e7d32);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#startButton:hover {
+    background: linear-gradient(135deg, #43a047, #1b5e20);
+    transform: scale(1.1);
+}
+
+#startButton:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Time Display Styling */
+#time {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #e0e0e0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Shape Styling */
+#shape {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+/* Circular Shape */
+#shape.circle {
+    border-radius: 50%;
+}
+
+/* Hover Effect on Shapes */
+#shape:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
